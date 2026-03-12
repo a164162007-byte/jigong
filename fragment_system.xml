@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gap="12dp">
+
+        <Button
+            android:id="@+id/btn_export_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="导出本年数据"/>
+        <Button
+            android:id="@+id/btn_export_month"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="导出本月数据"/>
+        <Button
+            android:id="@+id/btn_export_range"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="导出时间段数据"/>
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="切换白天/黑夜模式"/>
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="清空数据"
+            android:textColor="#FF0000"/>
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="检查更新"/>
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="退出应用"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gap="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一键记一天"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2026-03-11"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/et_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="工作地点（必填）"/>
+
+        <Button
+            android:id="@+id/btn_one_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="记录标准工日"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手动记工（不足一天）"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/et_start_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="上班时间 例：09:00"/>
+
+        <EditText
+            android:id="@+id/et_end_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="下班时间 例：18:00"/>
+
+        <EditText
+            android:id="@+id/et_location_manual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="工作地点（必填）"/>
+
+        <Button
+            android:id="@+id/btn_manual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="记录工时"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加班记录"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/et_overtime_hours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="加班时长（小时，支持小数）"/>
+
+        <EditText
+            android:id="@+id/et_location_overtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="加班地点（必填）"/>
+
+        <Button
+            android:id="@+id/btn_overtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="记录加班"/>
+
+        <TextView
+            android:id="@+id/tv_overtime_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加班总时长：0 小时"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+</ScrollView>

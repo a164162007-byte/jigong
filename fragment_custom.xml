@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gap="12dp">
+
+        <EditText
+            android:id="@+id/et_normal_hours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="每日正常上班小时（默认8）"/>
+
+        <EditText
+            android:id="@+id/et_overtime_convert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="加班多少小时折1工（默认8）"/>
+
+        <EditText
+            android:id="@+id/et_meal_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="饭补金额（元/工，默认15）"/>
+
+        <EditText
+            android:id="@+id/et_backup_days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="备份间隔天数（默认7）"/>
+
+        <Button
+            android:id="@+id/btn_manual_backup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="手动备份"/>
+
+        <Button
+            android:id="@+id/btn_save_config"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="保存配置"/>
+
+    </LinearLayout>
+</ScrollView>
